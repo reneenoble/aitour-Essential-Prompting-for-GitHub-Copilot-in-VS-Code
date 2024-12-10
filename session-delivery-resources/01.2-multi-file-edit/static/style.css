@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    background-color: #f0f0f0; /* Light Grey */
     margin: 0;
     padding: 50px;
     background-size: cover;
@@ -15,7 +15,7 @@ body {
     background-color: #ffffff; /* White */
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
-    border-radius: 15px; /* More rounded corners */
+    border-radius: 0; /* Square corners */
     position: relative; /* For positioning graphics inside container */
     z-index: 1; /* Ensure container is above background graphics */
 }
@@ -45,7 +45,7 @@ input, textarea {
     width: 100%;
     max-width: 400px; /* Wider inputs */
     border: 1px solid #cccccc; /* Light Grey */
-    border-radius: 10px; /* More rounded corners */
+    border-radius: 0; /* Square corners */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
@@ -55,7 +55,7 @@ button {
     background-color: #007bff; /* Primary Blue */
     color: #ffffff; /* White */
     border: none;
-    border-radius: 10px; /* More rounded corners */
+    border-radius: 0; /* Square corners */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
 }
