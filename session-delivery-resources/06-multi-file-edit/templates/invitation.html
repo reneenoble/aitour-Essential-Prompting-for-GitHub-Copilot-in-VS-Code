@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <script src="/static/rsvp.js" defer></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>You're Invited!</h1>
+    <p>Invitation ID: {{ invitation_id }}</p>
+    <form id="rsvpForm">
+        <input type="hidden" id="invitationId" name="invitationId" value="{{ invitation_id }}">
+        <br>
+        <button type="submit">RSVP</button>
+    </form>
+</body>
+</html>
