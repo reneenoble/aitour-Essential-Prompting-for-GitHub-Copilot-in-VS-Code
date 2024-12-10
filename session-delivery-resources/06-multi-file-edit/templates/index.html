@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Invitation Form</title>
+</head>
+<body>
+    <h1>Party Invitation Form</h1>
+    <form action="/make-invitation" method="post">
+        <label for="hostName">Host Name:</label>
+        <input type="text" id="hostName" name="hostName" required><br><br>
+
+        <label for="partyDate">Party Date:</label>
+        <input type="date" id="partyDate" name="partyDate" required><br><br>
+
+        <label for="partyTime">Party Time:</label>
+        <input type="time" id="partyTime" name="partyTime" required><br><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="details">Additional Details:</label><br>
+        <textarea id="details" name="details" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Send Invitation">
+    </form>
+</body>
+</html>
