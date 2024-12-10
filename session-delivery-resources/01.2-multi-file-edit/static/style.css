@@ -5,8 +5,6 @@ body {
     padding: 50px;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative; /* For positioning graphics */
-    overflow: hidden; /* Hide overflow of graphics */
 }
 
 .container {
@@ -14,17 +12,13 @@ body {
     margin: 0 auto;
     background-color: #ffffff; /* White */
     padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
-    border-radius: 0; /* Square corners */
-    position: relative; /* For positioning graphics inside container */
-    z-index: 1; /* Ensure container is above background graphics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
 }
 
 h1 {
     color: #333333; /* Dark Grey */
     text-align: center;
-    font-size: 2em; /* Larger font size */
-    margin-bottom: 20px; /* Space below heading */
 }
 
 form {
@@ -34,54 +28,31 @@ form {
 }
 
 label {
-    margin-top: 15px; /* More space above labels */
+    margin-top: 10px;
     font-weight: bold;
     color: #333333; /* Dark Grey */
 }
 
 input, textarea {
-    margin-top: 10px; /* More space above inputs */
-    padding: 15px; /* More padding */
+    margin-top: 5px;
+    padding: 10px;
     width: 100%;
-    max-width: 400px; /* Wider inputs */
+    max-width: 300px;
     border: 1px solid #cccccc; /* Light Grey */
-    border-radius: 0; /* Square corners */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 5px; /* Rounded corners */
 }
 
 button {
-    margin-top: 30px; /* More space above button */
-    padding: 15px 30px; /* More padding */
+    margin-top: 20px;
+    padding: 10px 20px;
     background-color: #007bff; /* Primary Blue */
     color: #ffffff; /* White */
     border: none;
-    border-radius: 0; /* Square corners */
+    border-radius: 5px; /* Rounded corners */
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #0056b3; /* Darker Blue */
-    transform: scale(1.05); /* Slightly larger on hover */
-}
-
-/* Background graphics */
-body::before, body::after {
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-    border-radius: 50%; /* Circular shapes */
-    z-index: 0; /* Behind everything */
-}
-
-body::before {
-    top: -50px;
-    left: -50px;
-}
-
-body::after {
-    bottom: -50px;
-    right: -50px;
 }
