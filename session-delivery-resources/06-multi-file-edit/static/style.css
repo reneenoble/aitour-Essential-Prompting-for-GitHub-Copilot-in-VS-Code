@@ -2,7 +2,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #ffefd5; /* Peach Puff */
     margin: 0;
-    padding: 0;
+    padding: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
