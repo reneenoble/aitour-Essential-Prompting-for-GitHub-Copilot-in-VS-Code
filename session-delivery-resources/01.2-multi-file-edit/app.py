@@ -1,8 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 
 app = Flask(__name__)
-
-AZURE_AOAI_KEY = "asdfjalfhjhkjhae78sdaf12"
 
 @app.route('/hello')
 def hello():
@@ -22,9 +20,7 @@ def view_invitation(invitation_id):
 
 @app.route('/rsvp/<invitation_id>', methods=['POST'])
 def rsvp(invitation_id):
-    data = request.get_json()
-    dietary_requirements = data.get('dietaryRequirements', 'None')
-    return f"RSVP for invitation {invitation_id} received with dietary requirements: {dietary_requirements}"
+    return f"RSVP for invitation {invitation_id} received"
 
 if __name__ == '__main__':
     app.run(debug=True)
